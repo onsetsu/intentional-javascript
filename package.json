@@ -8,7 +8,7 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "set NODE_ENV=production && webpack --define process.env.NODE_ENV='\"production\"'",
+    "build": "webpack",
     "watch": "webpack -d --watch",
     "test": "karma start karma.conf.js --single-run",
     "test:watch": "karma start karma.conf.js",
@@ -82,7 +82,8 @@
     "sinon-chai": "^2.8.0",
     "systemjs": "^0.19.31",
     "systemjs-plugin-babel": "0.0.12",
-    "watchify": "^3.7.0"
+    "watchify": "^3.7.0",
+    "webpack-config": "^5.2.1"
   },
   "dependencies": {
     "babel-core": "^6.7.7",
